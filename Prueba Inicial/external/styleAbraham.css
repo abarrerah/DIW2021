@@ -45,19 +45,7 @@ header{
   text-decoration: none;
 }
 
-#navbar a button{
-  color: var(--primary-color);
-  background-color: var(--theme-color);
-  border: var(--theme-color);
-  text-decoration: none;
-  font-family: 'Lato','Arial',sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  cursor: pointer;
-}
-#navbar a button:hover{
-  color: var(--hover-color);
-}
+
 #navbar #brand,
 #navbar #hamburgerIcon {
   flex: 1 0 50%;
