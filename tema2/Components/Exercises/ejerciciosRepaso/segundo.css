@@ -1,0 +1,47 @@
+.start {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5em;
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('/tema2/Components/Exercises/ejerciciosRepaso/imagenes/clockFace.png');
+    left: 50%;
+    margin: 5em 0 0 -189px;
+}
+
+#clock div {
+    position: absolute;
+}
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotatingm {
+   
+    animation: rotating 60s linear infinite;
+  }
+  .rotatingh{
+      animation: rotating 3600s linear infinite;
+  }
+  .rotatingd{
+    animation: rotating 86400s linear infinite;
+}
+/* ANIMACIONES Y TRANSFORMACIONES */

@@ -1,0 +1,32 @@
+#main {
+  width: 400px;
+  height: 150px;
+  display: flex;
+  
+}
+
+#main div {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  margin: 3%;
+  color: yellow;
+  font-size: 18px;
+  transform: rotate(270deg)
+}
+div#first {
+  order: 2;
+  
+}
+div#second {
+  order: 4;
+  
+}
+div#third {
+  order: 1;
+
+}
+div#fourth {
+  order: 3;
+  
+}
