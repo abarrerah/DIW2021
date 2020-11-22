@@ -19,6 +19,11 @@ main h1{
     color: #d2dae2;
     font-size:22px;
     margin-left: 7%;
+    transition: font-size 2s;
+}
+main h1:hover {
+  font-size: 35px;
+
 }
 
 body main div{
@@ -58,6 +63,10 @@ body main div{
     color: #d2dae2;
     width: 60%;
     font-size: 14px; 
+    
+  }
+  .centered:hover{
+    animation:shake 1.7s infinite;
   }
   body main div:hover img{
     box-shadow: 0 0 12px rgba(255,255,255,1) inset;
@@ -72,6 +81,47 @@ body main div{
     transition: all .35s ease-in-out;
   
   }
+  
   @media screen and (min-width:992px){
+    body main{
+      display:grid;
+      grid-template-areas:
+      'header header header header header header'
+      'main main main right right right'
+      'menu menu menu footer footer footer';
+    }
+    body main h1{
+      grid-area: header;
+    }
+    body main div{
+      height:50vh;
+    }
+    body main div:hover{
+    
+      transition: all .2s ease-in-out;
+      width: 93%;
+      height: 64vh;
+      
+    }
+    body main div.info{
+      grid-area: main;
+    }
+    body main div.mod{
+      grid-area: right;
+    }
+    body main div.ex{
+      grid-area: menu;
+    }
+    body main div.ftp{
+      grid-area: footer;
+    }
 
+  }
+  @keyframes shake{
+    0%{
+      transform:rotateZ(0deg);
+    }
+    100%{
+      transform:rotateZ(360deg);
+    }
   }

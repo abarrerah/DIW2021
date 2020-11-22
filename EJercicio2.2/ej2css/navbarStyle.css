@@ -21,6 +21,7 @@
   width: 5px;
   height: 100%;
   background: #0fbcf9;
+  z-index: 9999;
 }
 #progressbar:before{
   content: '';
@@ -31,6 +32,7 @@
   position: absolute;
   background: #0fbcf9;
   filter: blur(10px);
+  z-index: 9999;
 }
 #progressbar:after{
   content: '';
@@ -41,6 +43,7 @@
   position: absolute;
   background: #0fbcf9;
   filter: blur(30px);
+  z-index: 9999;
 }
 body {
   font-family: "Josefin Sans", sans-serif;
